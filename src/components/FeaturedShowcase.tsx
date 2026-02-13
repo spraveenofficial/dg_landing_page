@@ -4,27 +4,23 @@ import { motion } from "framer-motion";
 const products = [
     {
         id: 1,
-        name: "The Royal Kundan Set",
-        image: "https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?q=80&w=1000&auto=format&fit=crop",
-        colSpan: "md:col-span-2",
+        name: "Royal Heritage Kundan Set",
+        image: "https://images.unsplash.com/photo-1608042314453-ae338d80c427?q=80&w=1000&auto=format&fit=crop",
     },
     {
         id: 2,
-        name: "Emerald & Diamond Solitaire",
-        image: "https://images.unsplash.com/photo-1599643478518-17488fbbcd75?q=80&w=1000&auto=format&fit=crop",
-        colSpan: "md:col-span-1",
+        name: "Solitaire Diamond Ring",
+        image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=1000&auto=format&fit=crop",
     },
     {
         id: 3,
         name: "18k Gold Plated Bangles",
         image: "https://images.unsplash.com/photo-1611085583191-a3b181a88401?q=80&w=1000&auto=format&fit=crop",
-        colSpan: "md:col-span-1",
     },
     {
         id: 4,
-        name: "Sapphire Drop Earrings",
+        name: "Diamond Drop Earrings",
         image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=1000&auto=format&fit=crop",
-        colSpan: "md:col-span-2",
     },
 ];
 
@@ -37,7 +33,7 @@ const FeaturedShowcase = () => {
                     <p className="text-muted-foreground">Select pieces from our exclusive vault.</p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {products.map((product, index) => (
                         <motion.div
                             key={product.id}
@@ -45,7 +41,7 @@ const FeaturedShowcase = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, margin: "-50px" }}
                             transition={{ delay: index * 0.1, duration: 0.6 }}
-                            className={`group relative overflow-hidden rounded-lg aspect-4/5 ${product.colSpan}`}
+                            className="group relative overflow-hidden rounded-lg aspect-4/5"
                         >
                             <img
                                 src={product.image}
