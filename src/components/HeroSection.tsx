@@ -33,7 +33,7 @@ const HeroSection = () => {
                     <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold tracking-tight text-foreground mb-6">
                         Timeless <span className="text-primary">Elegance</span>
                         <br />
-                        by DG
+                        by Dhanji Govindji Jewellers
                     </h1>
                     <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
                         Discover a collection where heritage meets modern artistry.
