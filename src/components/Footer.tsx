@@ -31,11 +31,13 @@ const Footer = () => {
 
                     {/* Legal */}
                     <div>
-                        <h4 className="font-serif font-medium text-lg mb-6">Legal</h4>
+                        <h4 className="font-serif font-medium text-lg mb-6">Legal & Info</h4>
                         <ul className="space-y-3 text-sm text-muted-foreground">
-                            <li><a href="#" className="hover:text-primary transition-colors">Privacy Policy</a></li>
-                            <li><a href="#" className="hover:text-primary transition-colors">Terms of Service</a></li>
-                            <li><a href="#" className="hover:text-primary transition-colors">Cookie Policy</a></li>
+                            <li><a href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</a></li>
+                            <li><a href="/terms-and-conditions" className="hover:text-primary transition-colors">Terms and Conditions</a></li>
+                            <li><a href="/refund-policy" className="hover:text-primary transition-colors">Cancellation & Refunds</a></li>
+                            <li><a href="/shipping-policy" className="hover:text-primary transition-colors">Shipping Policy</a></li>
+                            <li><a href="/contact-us" className="hover:text-primary transition-colors">Contact Us</a></li>
                         </ul>
                     </div>
 
