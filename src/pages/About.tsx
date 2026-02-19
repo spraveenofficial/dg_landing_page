@@ -76,6 +76,10 @@ const About = () => {
                             With a reputation built on quality and authenticity (Rated 4.1/5), every piece at DG Jewellers is a promise of purity.
                         </p>
 
+                        <p className="text-muted-foreground text-lg leading-relaxed mt-4">
+                            Legal Business Name: <span className="text-primary font-serif">PRAVEEN KUMAR SINGH</span>
+                        </p>
+
                         <div className="pt-8 border-t border-border/40 flex gap-8">
                             <div>
                                 <span className="block text-3xl font-serif text-primary">25+</span>
