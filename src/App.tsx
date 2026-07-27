@@ -7,6 +7,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import RefundPolicy from "./pages/RefundPolicy";
 import ShippingPolicy from "./pages/ShippingPolicy";
 import TermsConditions from "./pages/TermsConditions";
+import AccountDeletion from "./pages/AccountDeletion";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="terms-and-conditions" element={<TermsConditions />} />
         <Route path="shipping-policy" element={<ShippingPolicy />} />
         <Route path="privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="account-deletion" element={<AccountDeletion />} />
       </Route>
     </Routes>
   );

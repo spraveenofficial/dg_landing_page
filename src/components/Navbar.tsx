@@ -23,6 +23,10 @@ const Navbar = () => {
         { name: "About Us", path: "/about" },
         { name: "Contact", path: "/contact" },
     ];
+    
+    const userLinks = [
+        { name: "Account Deletion", path: "/account-deletion" },
+    ];
 
     return (
         <nav
@@ -84,6 +88,18 @@ const Navbar = () => {
                                         {link.name}
                                     </Link>
                                 ))}
+                                <div className="pt-4 border-t border-border">
+                                    <h3 className="text-lg font-medium mb-3">Account</h3>
+                                    {userLinks.map((link) => (
+                                        <Link
+                                            key={link.name}
+                                            to={link.path}
+                                            className="block py-2 text-base text-foreground hover:text-primary transition-colors"
+                                        >
+                                            {link.name}
+                                        </Link>
+                                    ))}
+                                </div>
                                 <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
                                     Book Appointment
                                 </Button>

@@ -38,6 +38,7 @@ const Footer = () => {
                             <li><a href="/refund-policy" className="hover:text-primary transition-colors">Cancellation & Refunds</a></li>
                             <li><a href="/shipping-policy" className="hover:text-primary transition-colors">Shipping Policy</a></li>
                             <li><a href="/contact-us" className="hover:text-primary transition-colors">Contact Us</a></li>
+                            <li><a href="/account-deletion" className="hover:text-primary transition-colors">Account Deletion</a></li>
                         </ul>
                     </div>
 
